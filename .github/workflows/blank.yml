@@ -1,0 +1,12 @@
+name: PR
+
+on:
+  pull_request:
+
+jobs:
+  responds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: '[Validation] Check the PR is from a fork'
+        run: |
+          env
